@@ -50,5 +50,13 @@ class TestSortingAlgorithms(unittest.TestCase):
         a = [1]
         sort.selection_sort(a)
         self.assertEqual(a, [1])
+    def test_selection_sort_4(self):
+        """
+        Prueba para lista ya ordenada
+        """
+        a = [1, 2, 3, 5, 7, 9]
+        sort.selection_sort(a)
+        self.assertEqual(a, [1, 2, 3, 5, 7, 9])
+        
 if __name__ == '__main__':
     unittest.main()
