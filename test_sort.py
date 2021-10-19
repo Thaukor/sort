@@ -89,7 +89,7 @@ class TestSortingAlgorithms(unittest.TestCase):
         """
         a = [1, 2, 3, 5, 7, 9]
         sort.bubble_sort(a)
-        self.assertEqual(a, [2, 2, 2, 4, 7, 9])
+        self.assertEqual(a, [1, 2, 3, 5, 7, 9])
 
         
 if __name__ == '__main__':
