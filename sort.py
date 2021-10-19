@@ -22,3 +22,13 @@ def quick_sort(array, i=None, j=None):
         pivot = get_pivot(array, i, j)
         quick_sort(array, i, pivot - 1)
         quick_sort(array, pivot + 1, j)
+
+def selection_sort(array):
+    for i in range(len(array)):
+        m = i
+        for j in range(i+1, len(array)):
+            if array[m] > array[j]:
+                m = j
+        aux = array[i]
+        array[i] = array[m]
+        array[m] = aux            
