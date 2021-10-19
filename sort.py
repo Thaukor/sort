@@ -34,3 +34,13 @@ def bubble_sort(array):
                 aux = array[i]
                 array[i] = array[i+1]
                 array[i+1] = aux
+
+def selection_sort(array):
+    for i in range(len(array)):
+        m = i
+        for j in range(i+1, len(array)):
+            if array[m] > array[j]:
+                m = j
+        aux = array[i]
+        array[i] = array[m]
+        array[m] = aux
