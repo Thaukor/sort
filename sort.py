@@ -22,3 +22,15 @@ def quick_sort(array, i=None, j=None):
         pivot = get_pivot(array, i, j)
         quick_sort(array, i, pivot - 1)
         quick_sort(array, pivot + 1, j)
+
+def bubble_sort(array):
+    swapped = True
+    while swapped:
+        swapped = False
+
+        for i in range(len(array) - 1):
+            if array[i] > array[i+1]:
+                swapped = True
+                aux = array[i]
+                array[i] = array[i+1]
+                array[i+1] = aux
